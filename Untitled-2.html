@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>HTML Basics</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <h3>HTML Basics</h3>
+    <h4>Lists</h4>
+
+    <h5>Ordered list</h5>
+    <ol>
+        <li>item_1</li>
+        <li>item_2</li>
+        <li>item_3</li>
+        <li>item_4</li>
+        <li>item_5</li>
+    </ol>
+    <h5>Unordered list</h5>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+    </ul>
+    <div style="background-color: green;">
+        <h5>Description List</h5>
+
+        <dl>
+            <dt>Name</dt>
+                <dd>Jonn</dd>
+            <dt>Country</dt>
+                <dd>USA</dd>
+            <dt>Age</dt>
+                <dd>23</dd>
+            <dt>e-mail</dt>
+                <dd>jonn@gmail.com</dd>
+        </dl>
+
+        <h5>Nested List</h5>
+        <ul>
+            <li>item</li>
+            <li>item_2
+                <ul>
+                    <li>item_1
+                        <ul>
+                            <li>item_1</li>
+                            <li>item_2</li>
+                        </ul>
+                    </li>
+                    <li>item_2</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h5>List with links</h5>
+    <ul>
+        <li><a href="http://1.html">Home</a></li>
+        <li><a href="http://2.html">News</a></li>
+        <li><a href="http://3.html">Contact</a></li>
+        <li><a href="http://4.html">About</a></li>
+    </ul>
+    <hr>
+
+    <h4>Paragraphs</h4>
+    
+    <p>
+        Часто информация имеет сложную разветвленную структуру, которую, с одной стороны, 
+        будет трудно отобразить в виде одного списка, с другой - невозможно разбить на несколько отдельных списков. 
+        В этом случае используются так называемые вложенные списки (список, вложенный в другой список).
+    </p>
+    <p>
+        Для создания вложенного списка, <br> 
+        надо в родительский список поместить <br>
+        дочерний список так, чтобы все элементы <br>
+        дочернего списка были вложены в элемент  <br>
+        родительского списка:
+    </p>
+    <hr>
+
+    <h4>Tables</h4>
+
+    <table border="1" style="border-collapse: collapse;">
+        <tr>
+            <td>First name</td>
+            <td>Last name</td>
+        </tr>
+        <tr>
+            <td>Jonn</td>
+            <td>Doe</td>
+        </tr>
+        <tr>
+            <td>Jonn</td>
+            <td>Doe</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h4>Image</h4>
+
+    <img title="title" width="50" src="https://ae01.alicdn.com/kf/HTB1RCQ5PpXXXXbSXXXXq6xXFXXXq/Original-Cubot-Rainbow-2-Mobile-Phone-Dual-Back-lens-MTK6580A-Quad-Core-1G-RAM-16G-ROM.jpg_200x200.jpg" alt="Yandex">
+
+    <hr>
+
+    <h4>PRE tag</h4>
+    <pre>
+        curl_setopt($curl, CURLOPT_URL, $url);
+            if($count_proxy) curl_setopt($curl, CURLOPT_PROXY, $proxy[$id] );
+            curl_setopt($curl, CURLOPT_HEADER, true);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER,true);
+            curl_setopt($curl, CURLOPT_TIMEOUT, 10);
+    </pre>
+
+    </body>
+</html>
