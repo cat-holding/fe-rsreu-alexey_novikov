@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <form action="https://httpbin.org/post" method="POST" name="registration" id="registration">
+        <fieldset form="registration">
+            <legend>Personal data</legend>
+
+            <p>
+                <label for="surname">Surname: </label>
+                <input type="text" name="surname" id="surname" required autofocus>
+            </p>
+            <p>
+                <label for="first_name">First name: </label>
+                <input type="text" name="first_name" id="first_name" required>
+            </p>
+            <p>
+                <label for="middle_name">Middle name: </label>
+                <input type="text" name="middle_name" id="middle_name" required>
+            </p>
+            <p>
+                You are
+                <label><input type="radio" name="gender" value="male" checked> male</label>
+                <label><input type="radio" name="gender" value="female"> female</label>
+            </p>
+            <p>
+                <label for="number">Age: </label>
+                <input type="number" name="age" min="18" max="101" value="18" id="number">
+            </p>
+            <p>
+                <label>Country of Residence: <input list="country" name="country"></label>
+                <datalist id="country">
+                    <option value="fr">France</option>
+                    <option value="it">Italy</option>
+                    <option value="jp">Japan</option>
+                    <option value="hk">Hong Kong</option>
+                    <option value="ru">Russia</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="uae">United Arab Emirates</option>
+                    <option value="usa">United States</option>
+                </datalist>
+            </p>
+            <p>
+                City:
+                <label><input type="checkbox" name="city" value="ryazan"> Ryazan</label>
+                <label><input type="checkbox" name="city" value="moscow"> Moscow</label>
+            </p>
+            <p>
+                <label for="img">Photography </label>
+                <input type="file" name="img" id="img" multiple>
+            </p>
+            <hr>
+
+            <p>
+                <label for="title">Title: </label>
+                <select name="title" id="title" size="8">
+                    <optgroup label="Technologies">
+                        <option value="web_master">Web Master</option>
+                        <option value="db_admin" selected>Database Administrator</option>
+                        <option value="comp_design">Computer-aided design</option>
+                    </optgroup>
+                    <optgroup label="Finance">
+                        <option value="econ_planing">Economic Planning</option>
+                        <option value="management_accounting">Management accounting</option>
+                        <option value="budgeting_and_planning">Budgeting and planning</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="salary">Salary: </label>
+                <input type="range" min="1" max="100" name="salary" id="salary" />
+            </p>
+            <p>
+                <textarea name="about" cols="60" rows="10" placeholder="Tell us about yourself..."></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset form="registration">
+            <legend>Contact Information</legend>
+            <p>
+                <label for="site">Site: </label>
+                <input type="url" name="site" id="site">
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="phone">Phone: </label>
+                <input type="tel" name="phone" id="phone">
+            </p>
+        </fieldset>
+        <p>
+            <label>Password: <input type="password" name="pass"  pattern=".{6,}" title="Six or more characters" required></label>
+        </p>
+        <p>
+            <button type="reset">СБРОСИТЬ</button>
+            <button type="submit">ОТПРАВИТЬ</button>
+        </p>
+    </form>
+</body>
+
+</html>
