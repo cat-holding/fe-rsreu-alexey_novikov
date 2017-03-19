@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+</head>
+
+<body>
+    <h1>Registration form</h1>
+    <form action="https://httpbin.org/post" method="POST" name="registration" id="registration">
+        <fieldset form="registration">
+            <legend>Personal data</legend>
+
+            <p>
+                <label for="first_name">First name: </label>
+                <input type="text" name="first_name" id="first_name" required autofocus>
+            </p>
+            <p>
+                <label for="surname">Surname: </label>
+                <input type="text" name="surname" id="surname" required>
+            </p>
+            <table>
+                <tr>
+                    <td>Sex: </td>
+                    <td>
+                        <ul style="list-style: none;">
+                            <li>
+                                <input type="radio" name="gender" id="male" value="male" checked>
+                                <label for="male">Male</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="female">Female</label>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset form="registration">
+            <legend>Contact Information</legend>
+            <p>
+                <label for="site">Site: </label>
+                <input type="url" name="site" id="site">
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="phone">Phone: </label>
+                <input type="tel" name="phone" id="phone">
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">ОТПРАВИТЬ</button>
+        </p>
+    </form>
+</body>
+
+</html>
