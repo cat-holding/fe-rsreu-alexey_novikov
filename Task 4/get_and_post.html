@@ -8,7 +8,7 @@
 
 <body>
     <h1>The form</h1>
-    <form action="https://httpbin.org/get" method="GET" name="the_form" id="the_form">
+    <form action="https://httpbin.org/post" method="POST" name="the_form" id="the_form">
         <fieldset form="the_form">
             <legend>Personal data</legend>
 
@@ -126,12 +126,13 @@
             </table>
         </fieldset>
         <p>
-            <label>Password: <input type="password" name="pass" pattern=".{6,}" title="Six or more characters" required></label>
+            <label>Password: <input type="password" name="pass"  pattern=".{6,}" title="Six or more characters" required></label>
         </p>
         <hr>
 
         <p>
-            <button type="submit">ОТПРАВИТЬ</button>
+            <button type="submit">ОТПРАВИТЬ (POST)</button>
+            <button type="submit" formaction="https://httpbin.org/get" formmethod="GET">ОТПРАВИТЬ (GET)</button>
             <button type="reset">СБРОСИТЬ</button>
         </p>
     </form>
