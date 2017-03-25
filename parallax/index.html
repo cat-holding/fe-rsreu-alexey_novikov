@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Parallax effect</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .logo {
+            width: 300px;
+            height: auto;
+            position: relative;
+            margin: 50px auto;
+        }
+        
+        .logo img {
+            width: inherit;
+        }
+        
+        #paralax {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            overflow: hidden;
+        }
+        
+        #paralax div {
+            width: 3000px;
+            height: 455px;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            margin-left: -1500px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        #paralax .layer-01 {
+            background-image: url(img/layer-01.png);
+        }
+        
+        #paralax .layer-02 {
+            background-image: url(img/layer-02.png);
+        }
+        
+        #paralax .layer-03 {
+            background-image: url(img/layer-03.png);
+        }
+        
+        #paralax .layer-04 {
+            background-image: url(img/layer-04.png);
+        }
+        
+        #paralax .layer-05 {
+            background-image: url(img/layer-05.png);
+        }
+        
+        #paralax .layer-06 {
+            background-image: url(img/layer-06.png);
+        }
+        
+        #paralax .layer-07 {
+            background-image: url(img/layer-07.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="paralax">
+        <div class="layer-01"></div>
+        <div class="layer-02"></div>
+        <div class="layer-03"></div>
+        <div class="layer-04"></div>
+        <div class="layer-05"></div>
+        <div class="layer-06"></div>
+        <div class="layer-07"></div>
+    </div>
+    <div class="logo">
+        <img src="img/logo.png" alt="logotip">
+    </div>
+    <script>
+        var per = {
+            'layer-01': 0.02,
+            'layer-02': 0.08,
+            'layer-03': 0.10,
+            'layer-04': 0.18,
+            'layer-05': 0.25,
+            'layer-06': 0.28,
+            'layer-07': 0.40
+        };
+
+        var layer = document.getElementsByClassName('layer-01')[0],
+            width_layer = layer.offsetWidth / 2,
+            height_layer = layer.offsetHeight / 2;
+
+
+        document.onmousemove = function (e) {
+            var a = document.body.scrollWidth,
+                b = document.body.scrollHeight,
+                c = e.clientX,
+                d = e.clientY;
+            for (var i in per) {
+                var style = document.getElementsByClassName(i)[0].style;
+                style.marginBottom = -(1 - d / b) * height_layer * per[i] + 'px';
+                style.marginLeft = -(width_layer + (c - a / 2) * per[i]) + 'px';
+            }
+        }
+    </script>
+</body>
+
+</html>
