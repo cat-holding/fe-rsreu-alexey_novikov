@@ -1,0 +1,10 @@
+td.capital_letter {
+    text-transform: capitalize;
+}
+
+tr.odd {
+    background-color: #f2f6fa;
+}
+tr.even {
+    background-color: #e8edf4;
+}
