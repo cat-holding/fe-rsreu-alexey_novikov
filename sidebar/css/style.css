@@ -1,0 +1,202 @@
+        @font-face {
+            font-family: "FontAwesome";
+            src: url("../FontAwesome.otf");
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "Proxima Nova";
+            src: url("../Proxima Nova/Proxima Nova Regular.otf");
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "Proxima Nova";
+            src: url("../Proxima Nova/Proxima Nova Bold.otf");
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Proxima Nova";
+        }
+        
+        #menu {
+            width: 200px;
+            min-height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: #181e2c;
+        }
+        
+        .box {
+            margin-bottom: 4px;
+            background-color: #1f2637;
+            border-top: 1px solid #282F3F;
+            border-bottom: 1px solid #141824;
+        }
+        
+        #menu button[type=submit] {
+            width: 160px;
+            height: 44px;
+            position: relative;
+            margin: 35px 20px;
+            padding-left: 18px;
+            font-family: "Proxima Nova";
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: left;
+            color: #fff;
+            border: 0;
+            border-radius: 4px;
+            background-color: #f2795a;
+            cursor: pointer;
+        }
+        
+        .add_book::before {
+            content: "\f067"; /*plus*/
+            margin-right: 19px;
+            font-family: "FontAwesome";
+            font-size: 15px;
+            vertical-align: text-top;
+        }
+        
+        .box ul {
+            padding: 0;
+            margin: 0;
+            list-style: 0;
+            font-size: 0.8em;
+            color: #78829d;
+        }
+        
+        .box ul li {
+            padding-left: 20px;
+            height: 38px;
+            line-height: 38px;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+        
+        .navigation ul li:hover {
+            background-color: #15a4fa;
+            color: #fff;
+        }
+        
+        .box ul li::before {
+            width: 16px;
+            margin-right: 10px;
+            display: inline-block;
+            font-family: "FontAwesome";
+            font-size: 14px;
+        }
+        
+        .box ul li.item_1::before {
+            content: "\f02d"; /*book*/
+        }
+        
+        .box ul li.item_2::before {
+            content: "\f0ac"; /*globe*/
+        }
+        
+        .box ul li.item_3::before {
+            content: "\f07a"; /*shopping-cart*/
+        }
+        
+        .box ul li.item_4::before {
+            content: "\f005"; /*fa-star*/
+        }
+        
+        .box ul li.item_5::before {
+            content: "\f00b"; /*th-list*/
+        }
+        
+        .box ul li.item_6::before {
+            content: "\f017"; /*clock-o*/
+        }
+        
+        .sort {
+            padding: 17px 0;
+        }
+        
+        .sort ul li:hover {
+            background-color: #2c3240;
+        }
+        
+        .sort ul li::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            display: inline-block;
+            vertical-align: text-top;
+            margin: 5px 15px 0 5px;
+            border-radius: 50%;
+            background-color: #545454;
+        }
+        
+        .sort ul li.clr_1::before {
+            background-color: #e94b59;
+        }
+        
+        .sort ul li.clr_2::before {
+            background-color: #feaa00;
+        }
+        
+        .sort ul li.clr_3::before {
+            background-color: #00bbe4;
+        }
+        
+        .sort ul li.clr_4::before {
+            background-color: #7873cd;
+        }
+        
+        .recent ul {
+            padding: 37px 0;
+        }
+        
+        .recent ul li {
+            height: auto;
+            padding-right: 20px;
+            margin-bottom: 39px;
+            line-height: normal;
+            font-size: 12px;
+            color: #4f5a6f;
+            cursor: default;
+        }
+        
+        .recent ul li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .recent ul li::before {
+            content: "\f017"; /*clock-o*/
+            font-family: "FontAwesome";
+            text-align: center;
+            vertical-align: text-top;
+            height: 15px;
+        }
+        
+        .recent ul li p {
+            padding-left: 26px;
+            margin-top: -17px;
+            line-height: 1.5em;
+        }
+        
+        .recent ul li p a {
+            text-decoration: none;
+            color: #677b92;
+        }
+        
+        .recent ul li p a:hover {
+            color: #7b8fa5;
+        }
+        
+        .recent ul li time {
+            display: inline;
+            padding: 18px 0 0 26px;
+        }
