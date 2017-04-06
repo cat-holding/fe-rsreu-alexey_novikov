@@ -1,97 +1,120 @@
         @font-face {
             font-family: "FontAwesome";
+            font-weight: 400;
+            font-style: normal;
+
             src: url("../FontAwesome.otf");
-            font-weight: 400;
-            font-style: normal;
         }
         
         @font-face {
             font-family: "Proxima Nova";
+            font-weight: 400;
+            font-style: normal;
+
             src: url("../Proxima Nova/Proxima Nova Regular.otf");
-            font-weight: 400;
-            font-style: normal;
         }
         
         @font-face {
             font-family: "Proxima Nova";
-            src: url("../Proxima Nova/Proxima Nova Bold.otf");
             font-weight: 700;
             font-style: normal;
+
+            src: url("../Proxima Nova/Proxima Nova Bold.otf");
         }
         
         body {
             margin: 0;
             padding: 0;
+
             font-family: "Proxima Nova";
         }
         
         #menu {
-            width: 200px;
-            min-height: 100%;
             position: absolute;
             top: 0px;
             left: 0px;
+
+            width: 200px;
+            min-height: 100%;
+
             background-color: #181e2c;
         }
         
         .box {
             margin-bottom: 4px;
-            background-color: #1f2637;
+
             border-top: 1px solid #282F3F;
             border-bottom: 1px solid #141824;
+            background-color: #1f2637;
         }
         
         #menu button[type=submit] {
+            position: relative;
+
             width: 160px;
             height: 44px;
-            position: relative;
             margin: 35px 20px;
             padding-left: 18px;
-            font-family: "Proxima Nova";
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
+
+            cursor: pointer;
             text-align: left;
+            text-transform: uppercase;
+
             color: #fff;
             border: 0;
             border-radius: 4px;
             background-color: #f2795a;
-            cursor: pointer;
+
+            font-family: "Proxima Nova";
+            font-size: 14px;
+            font-weight: 700;
         }
         
         .add_book::before {
-            content: "\f067"; /*plus*/
             margin-right: 19px;
+
+            content: "\f067"; /*plus*/
+            vertical-align: text-top;
+
             font-family: "FontAwesome";
             font-size: 15px;
-            vertical-align: text-top;
         }
         
         .box ul {
-            padding: 0;
             margin: 0;
+
+            padding: 0;
+
             list-style: 0;
-            font-size: 0.8em;
+
             color: #78829d;
+
+            font-size: 0.8em;
         }
         
         .box ul li {
-            padding-left: 20px;
             height: 38px;
-            line-height: 38px;
-            text-transform: capitalize;
+
+            padding-left: 20px;
+
             cursor: pointer;
+            text-transform: capitalize;
+
+            line-height: 38px;
         }
         
         .navigation ul li:hover {
-            background-color: #15a4fa;
             color: #fff;
+
+            background-color: #15a4fa;
         }
         
         .box ul li::before {
+            display: inline-block;
+
             width: 16px;
             margin-right: 10px;
-            display: inline-block;
+
             font-family: "FontAwesome";
             font-size: 14px;
         }
@@ -129,12 +152,15 @@
         }
         
         .sort ul li::before {
-            content: "";
+            display: inline-block;
+
             width: 6px;
             height: 6px;
-            display: inline-block;
-            vertical-align: text-top;
             margin: 5px 15px 0 5px;
+
+            content: "";
+            vertical-align: text-top;
+
             border-radius: 50%;
             background-color: #545454;
         }
@@ -161,12 +187,15 @@
         
         .recent ul li {
             height: auto;
-            padding-right: 20px;
             margin-bottom: 39px;
-            line-height: normal;
-            font-size: 12px;
-            color: #4f5a6f;
+            padding-right: 20px;
+
             cursor: default;
+
+            color: #4f5a6f;
+
+            font-size: 12px;
+            line-height: normal;
         }
         
         .recent ul li:last-child {
@@ -174,21 +203,26 @@
         }
         
         .recent ul li::before {
+            height: 15px;
+
             content: "\f017"; /*clock-o*/
-            font-family: "FontAwesome";
             text-align: center;
             vertical-align: text-top;
-            height: 15px;
+
+            font-family: "FontAwesome";
         }
         
         .recent ul li p {
-            padding-left: 26px;
             margin-top: -17px;
+
+            padding-left: 26px;
+
             line-height: 1.5em;
         }
         
         .recent ul li p a {
             text-decoration: none;
+
             color: #677b92;
         }
         
@@ -198,5 +232,6 @@
         
         .recent ul li time {
             display: inline;
+
             padding: 18px 0 0 26px;
         }
