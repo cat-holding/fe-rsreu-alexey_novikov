@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login in</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="b-modal clearfix">
+
+        <div class="b-modal__title clearfix">
+            <h3 class="title-1">Welcome</h3>
+            <h4 class="title-2">Log in</h4>
+        </div>
+
+        <div class="b-modal__social-button clearfix">
+            <span class="subtitle">Log in with a social network:</span>
+
+            <button type="button" class="btn btn--twitter left"></button>
+            <button type="button" class="btn btn--facebook right"></button>
+        </div>
+
+        <form class="b-form clearfix" action="http://httpbin.org/post" type="POST">
+
+            <span class="subtitle">
+                    Log in with registered details:
+                </span>
+
+            <input class="b-form__input b-form__input--username" type="text" name="" placeholder="Username" maxlength="20" autofocus required>
+
+            <input class="b-form__input b-form__input--password" type="password" name="" placeholder="Password" maxlength="20" required>
+
+            <label class="b-label">
+                <input class="none" type="checkbox" name="keep" checked>
+                    <div class="b-label__checkbox"></div>
+                    <span class="b-label__text">Keep me signed in</span>
+                </label>
+
+            <button class="b-form__submit right" type="submit"></button>
+
+        </form>
+        <div class="b-modal__links clearfix">
+                <a class="link left" href="#">Forgotten your Password?</a>
+                <span class="b-modal__sidetext  right">
+                    Don’t have an account? 
+                        <a class="link" href="#">Register Now</a>
+                    </span>
+            </div>
+    </div>
+
+</body>
+
+</html>
