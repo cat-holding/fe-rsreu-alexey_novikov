@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Template</title>
+    <meta charset="UTF-8">
+    <link href="css/style_menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body class="flex-container">
+
+    <header class="header flex-container__header">
+
+        <a href="#" class="header__link">Help Center</a>
+        <a href="#" class="header__link">Our Support</a>
+
+        <div class="user">
+            <span class="user__image" style="background-image: url('img/avatar.jpg');"></span>
+            <span class="user__name">John Doe</span>
+        </div>
+    </header>
+
+    <header id="menu" class="flex-container__menu">
+        <div class="box">
+            <button type="submit" class="add_book">add a book</button>
+        </div>
+        <div class="box navigation">
+            <ul>
+                <li class="item_1">how reading</li>
+                <li class="item_2">browse</li>
+                <li class="item_3">buy books</li>
+                <li class="item_4">favourite books</li>
+                <li class="item_5">wishlist</li>
+                <li class="item_6">recent</li>
+            </ul>
+        </div>
+        <div class="box sort">
+            <ul>
+                <li class="clr_1">must read titles</li>
+                <li class="clr_2">best of list</li>
+                <li class="clr_3">classic novels</li>
+                <li class="clr_4">non fiction</li>
+            </ul>
+        </div>
+        <div class="box recent">
+            <ul>
+                <li>
+                    <p>
+                        You added <a href="#">Fight Club</a> by
+                        <a href="#">Chuck Palahniuk</a> to your
+                        <a href="#">Must Read Titles</a>.
+                    </p>
+                    <time datetime="2017-03-29 10:24">24 minutes ago</time>
+                </li>
+                <li>
+                    <p>
+                        You added <a href="#">The Trial</a> by
+                        <a href="#">Franz Kafka</a> to your
+                        <a href="#">Must Read Titles</a>.
+                    </p>
+                    <time datetime="2017-03-29 10:00">48 minutes ago</time>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+
+    <section class="flex-container__content">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="container-fluid__title">Browse Aviable Books</h1>
+            </div>
+
+            <div class="row container-fluid__navigation">
+                <div class="filters">
+                    <a href="#" class="filters__button filters__button--active">All Books</a>
+                    <a href="#" class="filters__button">Most Recent</a>
+                    <a href="#" class="filters__button">Most Popular</a>
+                    <a href="#" class="filters__button">Free Books</a>
+                </div>
+                <form class="search">
+                    <input class="search__input" type="text" placeholder="Enter Keywords">
+                </form>
+            </div>
+            <div class="content">
+
+
+
+
+                <div class="book">
+                    <img class="book__image" src="img/book10.jpg" alt="Jewels of Nizam" />
+                    <h3 class="book__title">Jewels of Nizam</h3>
+                    <span class="book__author">by Geeta Devi</span>
+
+                    <div class="stars">
+                        <input class="stars__star none star-5" id="star10-5-2" type="radio" name="star10" />
+                        <label class="stars__lbl-star star-5" for="star10-5-2"></label>
+                        <input class="stars__star none star-5" id="star10-5-1" type="radio" name="star10" />
+                        <label class="stars__lbl-star star-5" for="star10-5-1"></label>
+                        <input class="stars__star none star-4" id="star10-4-2" type="radio" name="star10" />
+                        <label class="stars__lbl-star star-4" for="star10-4-2"></label>
+                        <input class="stars__star none star-4" id="star10-4-1" type="radio" name="star10" />
+                        <label class="stars__lbl-star star-4" for="star10-4-1"></label>
+                        <input class="stars__star none star-3" id="star10-3-2" type="radio" name="star10" />
+                        <label class="stars__lbl-star star-3" for="star10-3-2"></label>
+                        <input class="stars__star none star-3" id="star10-3-1" type="radio" name="star10" />
+                        <label class="stars__lbl-star star-3" for="star10-3-1"></label>
+                        <input class="stars__star none star-2" id="star10-2-2" type="radio" name="star10" checked/>
+                        <label class="stars__lbl-star star-2" for="star10-2-2"></label>
+                        <input class="stars__star none star-2" id="star10-2-1" type="radio" name="star10" />
+                        <label class="stars__lbl-star star-2" for="star10-2-1"></label>
+                        <input class="stars__star none star-1" id="star10-1-2" type="radio" name="star10" />
+                        <label class="stars__lbl-star star-1" for="star10-1-2"></label>
+                        <input class="stars__star none star-1" id="star10-1-1" type="radio" name="star10" />
+                        <label class="stars__lbl-star star-1" for="star10-1-1"></label>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="book__image" src="img/book9.jpg" alt="Cakes &amp; Bakes" />
+                    <h3 class="book__title">Cakes &amp; Bakes</h3>
+                    <span class="book__author">by Sanjeev Kapoor</span>
+
+                    <div class="stars">
+                        <input class="stars__star none star-5" id="star9-5-2" type="radio" name="star9" checked/>
+                        <label class="stars__lbl-star star-5" for="star9-5-2"></label>
+                        <input class="stars__star none star-5" id="star9-5-1" type="radio" name="star9" />
+                        <label class="stars__lbl-star star-5" for="star9-5-1"></label>
+                        <input class="stars__star none star-4" id="star9-4-2" type="radio" name="star9" />
+                        <label class="stars__lbl-star star-4" for="star9-4-2"></label>
+                        <input class="stars__star none star-4" id="star9-4-1" type="radio" name="star9" />
+                        <label class="stars__lbl-star star-4" for="star9-4-1"></label>
+                        <input class="stars__star none star-3" id="star9-3-2" type="radio" name="star9" />
+                        <label class="stars__lbl-star star-3" for="star9-3-2"></label>
+                        <input class="stars__star none star-3" id="star9-3-1" type="radio" name="star9" />
+                        <label class="stars__lbl-star star-3" for="star9-3-1"></label>
+                        <input class="stars__star none star-2" id="star9-2-2" type="radio" name="star9" />
+                        <label class="stars__lbl-star star-2" for="star9-2-2"></label>
+                        <input class="stars__star none star-2" id="star9-2-1" type="radio" name="star9" />
+                        <label class="stars__lbl-star star-2" for="star9-2-1"></label>
+                        <input class="stars__star none star-1" id="star9-1-2" type="radio" name="star9" />
+                        <label class="stars__lbl-star star-1" for="star9-1-2"></label>
+                        <input class="stars__star none star-1" id="star9-1-1" type="radio" name="star9" />
+                        <label class="stars__lbl-star star-1" for="star9-1-1"></label>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="book__image" src="img/book8.jpg" alt="Jamie`s Kitchen" />
+                    <h3 class="book__title">Jamie`s Kitchen</h3>
+                    <span class="book__author">by Jamie Oliver</span>
+
+                    <div class="stars">
+                        <input class="stars__star none star-5" id="star8-5-2" type="radio" name="star8" />
+                        <label class="stars__lbl-star star-5" for="star8-5-2"></label>
+                        <input class="stars__star none star-5" id="star8-5-1" type="radio" name="star8" />
+                        <label class="stars__lbl-star star-5" for="star8-5-1"></label>
+                        <input class="stars__star none star-4" id="star8-4-2" type="radio" name="star8" />
+                        <label class="stars__lbl-star star-4" for="star8-4-2"></label>
+                        <input class="stars__star none star-4" id="star8-4-1" type="radio" name="star8" />
+                        <label class="stars__lbl-star star-4" for="star8-4-1"></label>
+                        <input class="stars__star none star-3" id="star8-3-2" type="radio" name="star8" checked/>
+                        <label class="stars__lbl-star star-3" for="star8-3-2"></label>
+                        <input class="stars__star none star-3" id="star8-3-1" type="radio" name="star8" />
+                        <label class="stars__lbl-star star-3" for="star8-3-1"></label>
+                        <input class="stars__star none star-2" id="star8-2-2" type="radio" name="star8" />
+                        <label class="stars__lbl-star star-2" for="star8-2-2"></label>
+                        <input class="stars__star none star-2" id="star8-2-1" type="radio" name="star8" />
+                        <label class="stars__lbl-star star-2" for="star8-2-1"></label>
+                        <input class="stars__star none star-1" id="star8-1-2" type="radio" name="star8" />
+                        <label class="stars__lbl-star star-1" for="star8-1-2"></label>
+                        <input class="stars__star none star-1" id="star8-1-1" type="radio" name="star8" />
+                        <label class="stars__lbl-star star-1" for="star8-1-1"></label>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="book__image" src="img/book7.jpg" alt="Inexpensive Family Meals" />
+                    <h3 class="book__title">Inexpensive Family Meals</h3>
+                    <span class="book__author">by Simon Holst</span>
+
+                    <div class="stars">
+                        <input class="stars__star none star-5" id="star7-5-2" type="radio" name="star7" />
+                        <label class="stars__lbl-star star-5" for="star7-5-2"></label>
+                        <input class="stars__star none star-5" id="star7-5-1" type="radio" name="star7" checked/>
+                        <label class="stars__lbl-star star-5" for="star7-5-1"></label>
+                        <input class="stars__star none star-4" id="star7-4-2" type="radio" name="star7" />
+                        <label class="stars__lbl-star star-4" for="star7-4-2"></label>
+                        <input class="stars__star none star-4" id="star7-4-1" type="radio" name="star7" />
+                        <label class="stars__lbl-star star-4" for="star7-4-1"></label>
+                        <input class="stars__star none star-3" id="star7-3-2" type="radio" name="star7" />
+                        <label class="stars__lbl-star star-3" for="star7-3-2"></label>
+                        <input class="stars__star none star-3" id="star7-3-1" type="radio" name="star7" />
+                        <label class="stars__lbl-star star-3" for="star7-3-1"></label>
+                        <input class="stars__star none star-2" id="star7-2-2" type="radio" name="star7" />
+                        <label class="stars__lbl-star star-2" for="star7-2-2"></label>
+                        <input class="stars__star none star-2" id="star7-2-1" type="radio" name="star7" />
+                        <label class="stars__lbl-star star-2" for="star7-2-1"></label>
+                        <input class="stars__star none star-1" id="star7-1-2" type="radio" name="star7" />
+                        <label class="stars__lbl-star star-1" for="star7-1-2"></label>
+                        <input class="stars__star none star-1" id="star7-1-1" type="radio" name="star7" />
+                        <label class="stars__lbl-star star-1" for="star7-1-1"></label>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="book__image" src="img/book6.jpg" alt="Paleo Slow Cooking" />
+                    <h3 class="book__title">Paleo Slow Cooking</h3>
+                    <span class="book__author">by Chrissy Gower</span>
+
+                    <div class="stars">
+                        <input class="stars__star none star-5" id="star6-5-2" type="radio" name="star6" checked/>
+                        <label class="stars__lbl-star star-5" for="star6-5-2"></label>
+                        <input class="stars__star none star-5" id="star6-5-1" type="radio" name="star6" />
+                        <label class="stars__lbl-star star-5" for="star6-5-1"></label>
+                        <input class="stars__star none star-4" id="star6-4-2" type="radio" name="star6" />
+                        <label class="stars__lbl-star star-4" for="star6-4-2"></label>
+                        <input class="stars__star none star-4" id="star6-4-1" type="radio" name="star6" />
+                        <label class="stars__lbl-star star-4" for="star6-4-1"></label>
+                        <input class="stars__star none star-3" id="star6-3-2" type="radio" name="star6" />
+                        <label class="stars__lbl-star star-3" for="star6-3-2"></label>
+                        <input class="stars__star none star-3" id="star6-3-1" type="radio" name="star6" />
+                        <label class="stars__lbl-star star-3" for="star6-3-1"></label>
+                        <input class="stars__star none star-2" id="star6-2-2" type="radio" name="star6" />
+                        <label class="stars__lbl-star star-2" for="star6-2-2"></label>
+                        <input class="stars__star none star-2" id="star6-2-1" type="radio" name="star6" />
+                        <label class="stars__lbl-star star-2" for="star6-2-1"></label>
+                        <input class="stars__star none star-1" id="star6-1-2" type="radio" name="star6" />
+                        <label class="stars__lbl-star star-1" for="star6-1-2"></label>
+                        <input class="stars__star none star-1" id="star6-1-1" type="radio" name="star6" />
+                        <label class="stars__lbl-star star-1" for="star6-1-1"></label>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="book__image" src="img/book5.jpg" alt="Cook Like an Italian" />
+                    <h3 class="book__title">Cook Like an Italian</h3>
+                    <span class="book__author">by Tobie Puttock</span>
+
+                    <div class="stars">
+                        <input class="stars__star none star-5" id="star5-5-2" type="radio" name="star5" checked/>
+                        <label class="stars__lbl-star star-5" for="star5-5-2"></label>
+                        <input class="stars__star none star-5" id="star5-5-1" type="radio" name="star5" />
+                        <label class="stars__lbl-star star-5" for="star5-5-1"></label>
+                        <input class="stars__star none star-4" id="star5-4-2" type="radio" name="star5" />
+                        <label class="stars__lbl-star star-4" for="star5-4-2"></label>
+                        <input class="stars__star none star-4" id="star5-4-1" type="radio" name="star5" />
+                        <label class="stars__lbl-star star-4" for="star5-4-1"></label>
+                        <input class="stars__star none star-3" id="star5-3-2" type="radio" name="star5" />
+                        <label class="stars__lbl-star star-3" for="star5-3-2"></label>
+                        <input class="stars__star none star-3" id="star5-3-1" type="radio" name="star5" />
+                        <label class="stars__lbl-star star-3" for="star5-3-1"></label>
+                        <input class="stars__star none star-2" id="star5-2-2" type="radio" name="star5" />
+                        <label class="stars__lbl-star star-2" for="star5-2-2"></label>
+                        <input class="stars__star none star-2" id="star5-2-1" type="radio" name="star5" />
+                        <label class="stars__lbl-star star-2" for="star5-2-1"></label>
+                        <input class="stars__star none star-1" id="star5-1-2" type="radio" name="star5" />
+                        <label class="stars__lbl-star star-1" for="star5-1-2"></label>
+                        <input class="stars__star none star-1" id="star5-1-1" type="radio" name="star5" />
+                        <label class="stars__lbl-star star-1" for="star5-1-1"></label>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="book__image" src="img/book4.jpg" alt="Indian cooking" />
+                    <h3 class="book__title">Suneeta Vaswani</h3>
+                    <span class="book__author">by Geeta Devi</span>
+
+                    <div class="stars">
+                        <input class="stars__star none star-5" id="star4-5-2" type="radio" name="star4" />
+                        <label class="stars__lbl-star star-5" for="star4-5-2"></label>
+                        <input class="stars__star none star-5" id="star4-5-1" type="radio" name="star4" />
+                        <label class="stars__lbl-star star-5" for="star4-5-1"></label>
+                        <input class="stars__star none star-4" id="star4-4-2" type="radio" name="star4" />
+                        <label class="stars__lbl-star star-4" for="star4-4-2"></label>
+                        <input class="stars__star none star-4" id="star4-4-1" type="radio" name="star4" />
+                        <label class="stars__lbl-star star-4" for="star4-4-1"></label>
+                        <input class="stars__star none star-3" id="star4-3-2" type="radio" name="star4" />
+                        <label class="stars__lbl-star star-3" for="star4-3-2"></label>
+                        <input class="stars__star none star-3" id="star4-3-1" type="radio" name="star4" checked/>
+                        <label class="stars__lbl-star star-3" for="star4-3-1"></label>
+                        <input class="stars__star none star-2" id="star4-2-2" type="radio" name="star4" />
+                        <label class="stars__lbl-star star-2" for="star4-2-2"></label>
+                        <input class="stars__star none star-2" id="star4-2-1" type="radio" name="star4" />
+                        <label class="stars__lbl-star star-2" for="star4-2-1"></label>
+                        <input class="stars__star none star-1" id="star4-1-2" type="radio" name="star4" />
+                        <label class="stars__lbl-star star-1" for="star4-1-2"></label>
+                        <input class="stars__star none star-1" id="star4-1-1" type="radio" name="star4" />
+                        <label class="stars__lbl-star star-1" for="star4-1-1"></label>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="book__image" src="img/book3.jpg" alt="Jamie Does" />
+                    <h3 class="book__title">Jamie Does</h3>
+                    <span class="book__author">by Jamie Oliver</span>
+
+                    <div class="stars">
+                        <input class="stars__star none star-5" id="star3-5-2" type="radio" name="star3" />
+                        <label class="stars__lbl-star star-5" for="star3-5-2"></label>
+                        <input class="stars__star none star-5" id="star3-5-1" type="radio" name="star3" />
+                        <label class="stars__lbl-star star-5" for="star3-5-1"></label>
+                        <input class="stars__star none star-4" id="star3-4-2" type="radio" name="star3" />
+                        <label class="stars__lbl-star star-4" for="star3-4-2"></label>
+                        <input class="stars__star none star-4" id="star3-4-1" type="radio" name="star3" />
+                        <label class="stars__lbl-star star-4" for="star3-4-1"></label>
+                        <input class="stars__star none star-3" id="star3-3-2" type="radio" name="star3" checked/>
+                        <label class="stars__lbl-star star-3" for="star3-3-2"></label>
+                        <input class="stars__star none star-3" id="star3-3-1" type="radio" name="star3" />
+                        <label class="stars__lbl-star star-3" for="star3-3-1"></label>
+                        <input class="stars__star none star-2" id="star3-2-2" type="radio" name="star3" />
+                        <label class="stars__lbl-star star-2" for="star3-2-2"></label>
+                        <input class="stars__star none star-2" id="star3-2-1" type="radio" name="star3" />
+                        <label class="stars__lbl-star star-2" for="star3-2-1"></label>
+                        <input class="stars__star none star-1" id="star3-1-2" type="radio" name="star3" />
+                        <label class="stars__lbl-star star-1" for="star3-1-2"></label>
+                        <input class="stars__star none star-1" id="star3-1-1" type="radio" name="star3" />
+                        <label class="stars__lbl-star star-1" for="star3-1-1"></label>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="book__image" src="img/book2.jpg" alt="Indian cooking" />
+                    <h3 class="book__title">Suneeta Vaswani</h3>
+                    <span class="book__author">by Jamie Oliver</span>
+
+                    <div class="stars">
+                        <input class="stars__star none star-5" id="star2-5-2" type="radio" name="star2" />
+                        <label class="stars__lbl-star star-5" for="star2-5-2"></label>
+                        <input class="stars__star none star-5" id="star2-5-1" type="radio" name="star2" checked/>
+                        <label class="stars__lbl-star star-5" for="star2-5-1"></label>
+                        <input class="stars__star none star-4" id="star2-4-2" type="radio" name="star2" />
+                        <label class="stars__lbl-star star-4" for="star2-4-2"></label>
+                        <input class="stars__star none star-4" id="star2-4-1" type="radio" name="star2" />
+                        <label class="stars__lbl-star star-4" for="star2-4-1"></label>
+                        <input class="stars__star none star-3" id="star2-3-2" type="radio" name="star2" />
+                        <label class="stars__lbl-star star-3" for="star2-3-2"></label>
+                        <input class="stars__star none star-3" id="star2-3-1" type="radio" name="star2" />
+                        <label class="stars__lbl-star star-3" for="star2-3-1"></label>
+                        <input class="stars__star none star-2" id="star2-2-2" type="radio" name="star2" />
+                        <label class="stars__lbl-star star-2" for="star2-2-2"></label>
+                        <input class="stars__star none star-2" id="star2-2-1" type="radio" name="star2" />
+                        <label class="stars__lbl-star star-2" for="star2-2-1"></label>
+                        <input class="stars__star none star-1" id="star2-1-2" type="radio" name="star2" />
+                        <label class="stars__lbl-star star-1" for="star2-1-2"></label>
+                        <input class="stars__star none star-1" id="star2-1-1" type="radio" name="star2" />
+                        <label class="stars__lbl-star star-1" for="star2-1-1"></label>
+                    </div>
+                </div>
+                <div class="book">
+                    <img class="book__image" src="img/book1.jpg" alt="Vegetables Cookbook" />
+                    <h3 class="book__title">Vegetables Cookbook</h3>
+                    <span class="book__author">by Matthew Biggs</span>
+
+                    <div class="stars">
+                        <input class="stars__star none star-5" id="star1-5-2" type="radio" name="star1" checked/>
+                        <label class="stars__lbl-star star-5" for="star1-5-2"></label>
+                        <input class="stars__star none star-5" id="star1-5-1" type="radio" name="star1" />
+                        <label class="stars__lbl-star star-5" for="star1-5-1"></label>
+                        <input class="stars__star none star-4" id="star1-4-2" type="radio" name="star1" />
+                        <label class="stars__lbl-star star-4" for="star1-4-2"></label>
+                        <input class="stars__star none star-4" id="star1-4-1" type="radio" name="star1" />
+                        <label class="stars__lbl-star star-4" for="star1-4-1"></label>
+                        <input class="stars__star none star-3" id="star1-3-2" type="radio" name="star1" />
+                        <label class="stars__lbl-star star-3" for="star1-3-2"></label>
+                        <input class="stars__star none star-3" id="star1-3-1" type="radio" name="star1" />
+                        <label class="stars__lbl-star star-3" for="star1-3-1"></label>
+                        <input class="stars__star none star-2" id="star1-2-2" type="radio" name="star1" />
+                        <label class="stars__lbl-star star-2" for="star1-2-2"></label>
+                        <input class="stars__star none star-2" id="star1-2-1" type="radio" name="star1" />
+                        <label class="stars__lbl-star star-2" for="star1-2-1"></label>
+                        <input class="stars__star none star-1" id="star1-1-2" type="radio" name="star1" />
+                        <label class="stars__lbl-star star-1" for="star1-1-2"></label>
+                        <input class="stars__star none star-1" id="star1-1-1" type="radio" name="star1" />
+                        <label class="stars__lbl-star star-1" for="star1-1-1"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer flex-container__footer">
+        <a href="#" class="footer__link footer__link--help"></a>
+        <a href="#" class="footer__link footer__link--gear footer__link--blue"></a>
+    </footer>
+
+
+</body>
+
+</html>
