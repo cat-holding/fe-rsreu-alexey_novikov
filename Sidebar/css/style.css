@@ -167,9 +167,9 @@ body {
   content: '\f005';
   color: #ffab00;
 }
-.stars__star:checked ~ .stars__lbl-star:hover ~ .stars__lbl-star:before,
-.stars__star:checked ~ .stars__lbl-star:hover:before {
-  color: #ff8100;
+.stars__star:hover ~ .stars__lbl-star:before {
+  content: '\f005';
+  color: #ffab00;
 }
 .stars__lbl-star {
   float: right;

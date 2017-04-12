@@ -172,9 +172,15 @@ body {
         content: '\f005';
         color: #ffab00;
     }
-    &__star:checked ~ &__lbl-star:hover ~ &__lbl-star:before, &__star:checked ~ &__lbl-star:hover:before {
-        color: #ff8100;
+
+    &__star:hover ~ &__lbl-star:before {
+        content: '\f005';
+        color: #ffab00;
     }
+    
+    // &__star:checked ~ &__lbl-star:hover ~ &__lbl-star:before, &__star:checked ~ &__lbl-star:hover:before {
+    //     color: #ff8100;
+    // }
     &__lbl-star {
         float: right;
         padding: 0;
