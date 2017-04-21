@@ -167,7 +167,7 @@ function filterArray(array) {
 
     if (isArray(array)) {
         var outArray = [];
-        
+
         for (var i = 0; i < array.length; i++) {
             var value = array[i];
 
@@ -191,6 +191,21 @@ function isArrayOfNumbers(array) {
         return array.every(isNumber);
     } else {
         throw new Error('Input is not a array!');
+    }
+}
+
+// My function
+function convertObjectToArray(obj) {
+    'use strict';
+
+    if (isObject(obj)) {
+        if ('length' in obj && isPositive(obj.length)) {
+            return Array.prototype.slice.call(obj);
+        } else {
+            throw new Error('The object does not have the length property or it is not a positive number!');
+        }
+    } else {
+        throw new Error('Input is not a object!');
     }
 }
 
