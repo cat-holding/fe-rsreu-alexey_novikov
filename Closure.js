@@ -3,56 +3,48 @@ var Calculator = (function (initNumber) {
 
     var currentState = isNumber(initNumber) ? initNumber : 0;
 
-    function executeOperation(nameOperation, args) {
+    function executeOperation(args, callback) {
         var args = convertObjectToArray(args);
-        var operations = {
-            add: function (num) {
-                currentState += num;
-            },
-            subtract: function (num) {
-                currentState -= num;
-            },
-            multiply: function (num) {
-                currentState *= num;
-            },
-            divide: function (num) {
-                currentState /= num;
-            }
-        };
 
         if (isArrayOfNumbers(args)) {
-            args.forEach(function (num) {
-                if (isString(nameOperation) && nameOperation in operations) {
-                    operations[nameOperation](num);
-                } else {
-                    throw new Error("Arithmetic operation does not exist!");
-                }
-            });
+            if (typeof callback === 'function') {
+                args.forEach(callback);
+            } else {
+                throw new Error("The second argument is not a function!");
+            }
         } else {
-            throw new Error("Input is not a number!");
+            throw new Error("The first argument is not a number!");
         }
     }
 
     function add() {
-        executeOperation('add', arguments);
+        executeOperation(arguments, function (num) {
+            currentState += num;
+        });
 
         return add;
     }
 
     function subtract() {
-        executeOperation('subtract', arguments);
+        executeOperation(arguments, function (num) {
+            currentState -= num;
+        });
 
         return subtract;
     }
 
     function multiply() {
-        executeOperation('multiply', arguments);
+        executeOperation(arguments, function (num) {
+            currentState *= num;
+        });
 
         return multiply;
     }
 
     function divide() {
-        executeOperation('divide', arguments);
+        executeOperation(arguments, function (num) {
+            currentState /= num;
+        });
 
         return divide;
     }
