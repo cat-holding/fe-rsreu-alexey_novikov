@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home page</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/Utils.js"></script>
+    <script>
+        // NUMBER
+        console.info('NUMBER');
+        console.log('isNumber(2):', Utils.isNumber(2)); // true
+        console.log('isNegative(2):', Utils.isNegative(2)); // false
+        console.log('isPositive(2):', Utils.isPositive(2)); // true
+        console.log('factorial(5):', Utils.factorial(5));
+        console.log('isPrime(11):', Utils.isPrime(11));
+
+        // STRING
+        console.info('STRING');
+        console.log('isString("JavaScript"):', Utils.isString("JavaScript")); // true
+        console.log('canParseToNumber("2"):', Utils.canParseToNumber("2")); // true
+        console.log('getStringLength("JS"):', Utils.getStringLength("JS")); // 2
+        console.log('camelize("java script"):', Utils.camelize("java script")); // "JavaScript"
+        console.log('capitalize("javaScript"):', Utils.capitalize("javaScript \n front-end")); // "JavaScript"
+        console.log('findOccurrences("a", "JavaScript" ):', Utils.findOccurrences("a", "JavaScript")); // 2
+
+        // ARRAYS
+        console.info('ARRAYS');
+        console.log('isArray([]):', Utils.isArray([])); // true
+        console.log('filterArray([NaN, 0, 15, false, -22, \'\', undefined, 47, null]):', Utils.filterArray([NaN, 0, 15, false, -22, '', undefined, 47, null]));
+        console.log('maxValueArray([2, 1, 5, -3, 3, 7, 0]):', Utils.maxValueArray([2, 1, 5, -3, 3, 7, 0])); // 7
+        console.log('minValueArray([2, 1, 5, -3, 3, 7, 0]):', Utils.minValueArray([2, 1, 5, -3, 3, 7, 0])); // -3
+        console.log('arrayOfWords(\'convert string into an array of words\'):', Utils.arrayOfWords('convert string into an array of words'));
+        console.log("frequentItemOfArray([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]):",
+            Utils.frequentItemOfArray([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3])); // "a"
+        console.log('cloneArray([5, 4, 5]):', Utils.cloneArray([5, 4, 5])); // [5, 4, 5]
+        console.log("removeDuplicates(['8', '8', 7, 7, 'text']):", Utils.removeDuplicates(['8', '8', 7, 7, 'text'])); // ["8", 7, "text"]
+        console.log('mergeArrays([1, 2, 3, 4, 5], [0, 4, 5]):', Utils.mergeArrays([1, 2, 3, 4, 5], [0, 4, 5])); // [1, 2, 3, 4, 5, 0]
+        console.log('removeElementFromArray([8, 9, 9, 6, "", false, NaN, true], NaN):', Utils.removeElementFromArray([8, 9, 9, 6, "", false, NaN, true], NaN)); // true
+        // console.log(':', ); // true
+        console.log('sortBy([{title:"..."},...], "title"):', Utils.sortBy([
+            { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254 },
+            { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264 },
+            { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245 }
+        ], 'title'));
+
+        // OBJECTS
+        console.info('OBJECTS');
+        var object = {
+            a: 1,
+            b: 2,
+            c: 3,
+            d: {
+                a: 1,
+                b: 2,
+                c: 3
+            }
+        };
+
+        console.log('lengthOfObject(obj):', Utils.lengthOfObject(object)); // 7
+        console.log('>>>>>>>>>>>');
+        console.log('propertiesOfObject(obj):', Utils.propertiesOfObject(object));
+        console.log('>>>>>>>>>>>');
+
+        // DATE
+        console.info('DATE');
+        console.log('getDifferenceInDays():', Utils.getDifferenceInDays(new Date("4/1/2017"), new Date("4/10/2017")));
+        console.log('formatDate():', Utils.formatDate(new Date("4/1/2017")));
+        console.log('getCurrentDate():', Utils.getCurrentDate());
+        console.log('formatDate():', Utils.formatDate(new Date())); // Oct 22 2016, 11:45
+    </script>
+</head>
+<body>
+
+</body>
+</html>
