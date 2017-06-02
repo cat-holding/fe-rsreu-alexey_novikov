@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="JavaScript, OOP, JAVASCRIPT PROTOTYPE">
+    <meta charset="utf-8">
+    <title>JAVASCRIPT PROTOTYPE</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="js/Shape.js"></script>
+    <script type="text/javascript" src="js/Shape2.js"></script>
+    <script type="text/javascript" src="js/Square.js"></script>
+    <script type="text/javascript" src="js/Triangle.js"></script>
+    <script type="text/javascript" src="js/Cube.js"></script>
+    <script>
+        // TODO: Use private variables
+        // TODO: Add setters and getters
+        // TODO: Move to a separate file
+
+        // TODO: Read about inheritance
+        // TODO: Use Object.defineProperties()
+
+        // TODO: Use Object.create()
+
+        var trngl = new Triangle('Red triangle', 2, 2, 1);
+        var sqr = new Square('Orange square', 5);
+        var cube = new Cube('My cube', 5, 'Black');
+
+        console.log(trngl, 'Perimeter:', trngl.perimeter, 'Type:', trngl.getType(), 'Name:', trngl.getName());
+        console.log(sqr, 'Perimeter:', sqr.perimeter, 'Type:', sqr.getType(), 'Name:', sqr.getName());
+        console.log(cube, 'Perimeter:', cube.perimeter, 'Type:', cube.getType(), 'Name:', cube.getName(), 'Color:', cube.color, 'Volume:', cube.getVolume());
+    </script>
+</body>
+
+</html>
