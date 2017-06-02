@@ -194,6 +194,7 @@ console.log(
 
 function isValidStar(star){
     var arr = [0, 1, 2, 3, 4, 5, 0.5, 1.5, 2.5, 3.5, 4.5, 5];
+    
     return arr.indexOf(star) >= 0;
 }
 

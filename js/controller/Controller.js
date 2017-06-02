@@ -9,6 +9,7 @@ function Controller(bookView, filterPanelView, notificationView, searchFormView,
 
     this.setBookView = function (obj) {
         _view = obj;
+
         return this;
     };
 
@@ -18,6 +19,7 @@ function Controller(bookView, filterPanelView, notificationView, searchFormView,
 
     this.setFilterPanelView = function (obj) {
         _filterPanelView = obj;
+
         return this;
     };
 
@@ -27,6 +29,7 @@ function Controller(bookView, filterPanelView, notificationView, searchFormView,
 
     this.setNotificationView = function (obj) {
         _notificationView = obj;
+
         return this;
     };
 
@@ -36,6 +39,7 @@ function Controller(bookView, filterPanelView, notificationView, searchFormView,
 
     this.setSearchFormView = function (obj) {
         _searchFormView = obj;
+
         return this;
     };
 
@@ -45,6 +49,7 @@ function Controller(bookView, filterPanelView, notificationView, searchFormView,
 
     this.setWindowAddBookView = function (obj) {
         _windowAddBookView = obj;
+
         return this;
     };
 
@@ -54,6 +59,7 @@ function Controller(bookView, filterPanelView, notificationView, searchFormView,
 
     this.setBookStorage = function (bookStorage) {
         _bookStorage = bookStorage;
+
         return this;
     };
 
@@ -63,6 +69,7 @@ function Controller(bookView, filterPanelView, notificationView, searchFormView,
 
     this.setNotificationStorage = function (notificationStorage) {
         _notificationStorage = notificationStorage;
+
         return this;
     };
 
@@ -92,15 +99,6 @@ Controller.prototype = (function () {
         var ns = this;
 
         this.getBookStorage()
-            // .loadBooks(function () {
-            //     // successful
-            //     this.getBookView()
-            //         .renderBooks(this.getBookStorage().data);
-            // }.bind(this), function () {
-            //     // error
-            //     this.getNotificationView()
-            //         .showNotificationText('The book list could not be loaded!');
-            // }.bind(this));
             .loadBooks().then(
             function (res) {
                 if (res) {
@@ -113,7 +111,7 @@ Controller.prototype = (function () {
                         .showNotificationText('The book list could not be loaded!');
                 }
             }
-            ).catch(function(ex){
+            ).catch(function (ex) {
                 console.log(ex);
             });
 
@@ -156,7 +154,6 @@ Controller.prototype = (function () {
     function searchBooks() {
         var keyWords = this.getSearchFormView().getKeywords();
         this.getBookStorage().searchString = keyWords;
-        //var books = this.getBookStorage().searchBooks(keyWords);
         this.getBookView().
             renderBooks(
             this.getBookStorage().getFilteredBooks()
@@ -178,17 +175,6 @@ Controller.prototype = (function () {
                 }
             }
         );
-
-
-        // this.getBookStorage().setRating(idBook, newRating, function () {
-        //     // successful
-        //     console.log('Rating changed!');
-        //     ns.getBookView().renderBooks(ns.getBookStorage().getFilteredBooks());
-        // }, function () {
-        //     // error
-        //     this.getNotificationView()
-        //         .showNotificationText('Rating could not be changed!');
-        // }.bind(this));
     }
 
     function onMostPopularBtnClick() {
@@ -202,6 +188,7 @@ Controller.prototype = (function () {
     }
 
     return {
+        constructor: Controller,
         onLoadDocument: onLoadDocument,
         onAddBookClick: onAddBookClick,
         searchBooks: searchBooks,

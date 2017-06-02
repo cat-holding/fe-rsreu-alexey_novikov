@@ -185,35 +185,6 @@ BookStorage.prototype = (function () {
                         return true;
                     }
                 });
-            /////////////
-
-            // return fetch("rateBook",
-            //     {
-            //         headers: {
-            //             'Accept': 'application/json',
-            //             'Content-Type': 'application/json'
-            //         },
-            //         method: "POST",
-            //         body: JSON.stringify({ idBook: idBook, stars: stars })
-            //     })
-            //     .then(function (res) {
-            //         return res.json();
-            //     })
-            //     .then(function (res) {
-            //         if (res.response) {
-            //             this.data[indexBookInArray].stars = stars;
-            //             if (typeof successful === 'function') {
-            //                 successful();
-            //             } else {
-            //                 if (typeof error === 'function') {
-            //                     error();
-            //                 }
-            //             }
-            //         }
-            //     }.bind(this))
-            //     .catch(function (res) {
-            //         console.log(res)
-            //     });
         }
     }
 

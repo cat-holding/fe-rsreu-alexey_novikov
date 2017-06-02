@@ -17,8 +17,9 @@ BookView.prototype = (function () {
         var input = event.target.previousSibling;
         var newRating = input.getAttribute('rating');
         var idBook = input.getAttribute('idBook');
-
+        
         this.getController().onStarClick.call(this.getController(), idBook, newRating);
+
         return false;
     }
 
