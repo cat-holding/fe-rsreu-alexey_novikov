@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Template</title>
+    <meta charset="UTF-8">
+    <link href="css/style_menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="flex-container">
+
+    <header class="header flex-container__header">
+
+        <a href="#" class="header__link">Help Center</a>
+        <a href="#" class="header__link">Our Support</a>
+
+        <div class="user">
+            <span class="user__image" style="background-image: url('img/avatar.jpg');"></span>
+            <span class="user__name">John Doe</span>
+        </div>
+    </header>
+
+    <header id="menu" class="flex-container__menu">
+        <div class="box">
+            <button type="submit" class="add_book">add a book</button>
+        </div>
+        <div class="box navigation">
+            <ul>
+                <li class="item_1">how reading</li>
+                <li class="item_2">browse</li>
+                <li class="item_3">buy books</li>
+                <li class="item_4">favourite books</li>
+                <li class="item_5">wishlist</li>
+                <li class="item_6">recent</li>
+            </ul>
+        </div>
+        <div class="box sort">
+            <ul>
+                <li class="clr_1">must read titles</li>
+                <li class="clr_2">best of list</li>
+                <li class="clr_3">classic novels</li>
+                <li class="clr_4">non fiction</li>
+            </ul>
+        </div>
+        <div class="box recent">
+            <ul>
+                <li>
+                    <p>
+                        You added <a href="#">Fight Club</a> by
+                        <a href="#">Chuck Palahniuk</a> to your
+                        <a href="#">Must Read Titles</a>.
+                    </p>
+                    <time datetime="2017-03-29 10:24">24 minutes ago</time>
+                </li>
+                <li>
+                    <p>
+                        You added <a href="#">The Trial</a> by
+                        <a href="#">Franz Kafka</a> to your
+                        <a href="#">Must Read Titles</a>.
+                    </p>
+                    <time datetime="2017-03-29 10:00">48 minutes ago</time>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="flex-container__content">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="container-fluid__title">Browse Aviable Books</h1>
+            </div>
+
+            <div class="row container-fluid__navigation">
+                <!--FILTER PANEL-->
+                <!--FORM FOR SEARCH-->
+            </div>
+            <div class="content">
+                <!--CONTENT BOOKS-->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer flex-container__footer">
+        <a href="#" class="footer__link footer__link--help"></a>
+        <a href="#" class="footer__link footer__link--gear footer__link--blue"></a>
+    </footer>
+
+<script type="text/javascript" src="js/utils/Utils.js"></script>
+<script type="text/javascript" src="js/model/Book.js"></script>
+<script type="text/javascript" src="js/model/Notification.js"></script>
+<script type="text/javascript" src="js/storage/BookStorage.js"></script>
+<script type="text/javascript" src="js/storage/NotificationStorage.js"></script>
+<script type="text/javascript" src="js/view/BookView.js"></script>
+<script type="text/javascript" src="js/view/FilterPanelView.js"></script>
+<script type="text/javascript" src="js/view/NotificationView.js"></script>
+<script type="text/javascript" src="js/view/SearchFormView.js"></script>
+<script type="text/javascript" src="js/view/WindowAddBookView.js"></script>
+<script type="text/javascript" src="js/controller/Controller.js"></script>
+
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
