@@ -1,0 +1,28 @@
+{
+  "name": "fe-rsreu-alexey_novikov",
+  "version": "0.0.0",
+  "description": "Setup TypeScript with Webpack",
+  "main": "index.ts",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cat-holding/fe-rsreu-alexey_novikov.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cat-holding/fe-rsreu-alexey_novikov/issues"
+  },
+  "homepage": "https://github.com/cat-holding/fe-rsreu-alexey_novikov#readme",
+  "devDependencies": {
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.3",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
